@@ -47,11 +47,11 @@ img {
     background-color: gray;
     height: 100%;
     margin-left:100px;
-    left:-150px;
+    left:-160px;
     transition-duration:1.0s;
 }
 
-.menu-frozen:hover .menu-moving {
+.menu:hover .menu-moving {
     left: 0;
 }
 
@@ -61,3 +61,6 @@ img {
     justify-content: left;
 }
 
+.m1:hover {
+background-color: red;
+}
