@@ -8,11 +8,12 @@
     padding: 10px 10px 10px 0;
 }
 
-.menu {
+.menu-frozen {
     position: fixed;
     width: 100px;
     background-color: gray;
     height: 100%;
+    z-index: 100;
 }
 
 p, h1 {
@@ -30,12 +31,32 @@ p, h1 {
     justify-content: center;
 }
 
-.menu-choise, li:hover {
+/* .menu-choise, li:hover {
     background-color: rgb(61, 58, 58);
-}
+} */
 
 img {
     width: 70px;
     height: 70px;
+}
+
+.menu-moving {
+    position: fixed;
+    width: 160px;
+    background-color: gray;
+    height: 100%;
+    margin-left:100px;
+    left:-150px;
+    transition-duration:1.0s;
+}
+
+.menu-frozen:hover .menu-moving {
+    left: 0;
+}
+
+.menu-empty, .li-menu-empty {
+    width: 160px;
+    height: 100px;
+    justify-content: left;
 }
 
